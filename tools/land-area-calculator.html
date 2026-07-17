@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Land Area Calculator | AgriCalc Pakistan</title>
+  <meta name="description" content="Convert between acres and hectares for field planning." />
+  <link rel="canonical" href="https://agricalcpakistan.github.io/tools/land-area-calculator.html" />
+  <meta property="og:title" content="Land Area Calculator | AgriCalc Pakistan" />
+  <meta property="og:description" content="Convert between acres and hectares for field planning." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://agricalcpakistan.github.io/tools/land-area-calculator.html" />
+  <link rel="icon" href="../assets/images/logo/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#2b7a0b">
+  <link rel="apple-touch-icon" href="/assets/images/logo/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/calculator.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <link rel="stylesheet" href="../assets/css/dark.css" />
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4579856063334364"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header" role="banner">
+  <div class="container navbar">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark">A</span>
+      <div class="brand__text">
+        <strong>AgriCalc Pakistan</strong>
+        <small>Smart Agriculture Platform</small>
+      </div>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+    <nav aria-label="Primary navigation">
+      <ul class="nav__list" role="menubar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="crop-calculator.html">Calculators</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button data-theme-toggle class="secondary-btn" type="button">Dark Mode</button>
+    </div>
+  </div>
+</header>
+  <main>
+    <section class="section hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../blog.html">Blog</a>
+          <span>/</span>
+          <span>Land Area Calculator</span>
+        </nav>
+        <div class="section__head">
+          <div>
+            <h1>Land Area Converter</h1>
+            <p>Convert between acres and hectares for field planning.</p>
+          </div>
+        </div>
+        <div class="calculator-grid">
+          <form id="land-form" class="calculator-panel" data-calculator-form>
+            <label for="value">Value to convert</label>
+            <input id="value" name="value" type="number" step="0.1" min="0" required />
+            <label for="fromUnit">Unit</label>
+            <select id="fromUnit" name="fromUnit">
+              <option value="acre">Acre</option>
+              <option value="kanal">Kanal</option>
+              <option value="marla">Marla</option>
+              <option value="squareFeet">Square Feet</option>
+              <option value="squareMeter">Square Meter</option>
+              <option value="hectare">Hectare</option>
+            </select>
+            <div class="validation-message" data-validation-message role="alert"></div>
+            <button class="primary-btn" type="submit">Convert Area</button>
+          </form>
+          <aside class="result-box" data-calculator-result>
+            <h3 data-result-title>Result</h3>
+            <p data-result-placeholder>Enter your values to see the estimate.</p>
+            <div class="result-summary" data-result-summary><strong>Enter your values to see the estimate.</strong></div>
+            <p class="formula" data-result-formula>Results will appear here.</p>
+            <ul class="result-lines" data-result-details></ul>
+            <div class="calculator-actions" data-calculator-actions>
+              <button class="secondary-btn" type="button" data-action="reset">Reset</button>
+              <button class="secondary-btn" type="button" data-action="copy">Copy Result</button>
+              <button class="secondary-btn" type="button" data-action="print">Print Result</button>
+              <button class="secondary-btn" type="button" data-action="share">Share Result</button>
+              <button class="secondary-btn" type="button" data-action="export-json">Export JSON</button>
+              <button class="secondary-btn" type="button" data-action="export-csv">Export CSV</button>
+            </div>
+            <div class="history-panel" data-history-panel>
+              <h4>Recent history</h4>
+              <div data-history-list></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="section section-light">
+      <div class="container card-grid">
+        <article class="feature-card">
+          <strong>How to use this tool</strong>
+          <p>Enter your field size or quantity, then review the result for planning fertilizer, irrigation or profit needs.</p>
+        </article>
+        <article class="feature-card">
+          <strong>FAQ</strong>
+          <p>These calculators are generalized estimates and should be checked against local agronomic advice.</p>
+        </article>
+        <article class="feature-card">
+          <strong>Related tools</strong>
+          <p>Explore other calculators such as crop planning, water use, and land conversion tools.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section section-light">
+  <div class="container newsletter">
+    <div>
+      <h2>Stay updated with seasonal farming tips</h2>
+      <p>Get practical guidance on crops, fertilizers, irrigation and field planning.</p>
+    </div>
+    <form>
+      <input type="email" placeholder="Enter your email" aria-label="Newsletter email" required />
+      <button class="primary-btn" type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+  </main>
+  <footer>
+  <div class="container footer-grid">
+    <section>
+      <h3>AgriCalc Pakistan</h3>
+      <p>Smart farming guidance, calculators, and articles for Pakistani growers.</p>
+    </section>
+    <section>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../search.html">Search</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../terms.html">Terms</a></li>
+        <li><a href="../disclaimer.html">Disclaimer</a></li>
+        <li><a href="../cookie-policy.html">Cookie Policy</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Social</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://www.youtube.com/" rel="noopener noreferrer">YouTube</a></li>
+        <li><a href="https://www.linkedin.com/" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="container footer-bottom">
+    <div class="footer-logo">
+      <span>A</span>
+      <div>
+        <strong>AgriCalc Pakistan</strong>
+        <small>Smart Agriculture Platform</small>
+      </div>
+    </div>
+    <p>© 2026 AgriCalc Pakistan. All rights reserved.</p>
+  </div>
+</footer>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Land Area Converter - AgriCalc Pakistan",
+    "url": "https://agricalcpakistan.github.io/tools/land-area-calculator.html",
+    "description": "Convert between acres and hectares for field planning.",
+    "applicationCategory": "Utilities",
+    "operatingSystem": "Web",
+    "inLanguage": "en",
+    "author": {
+      "@type": "Organization",
+      "name": "AgriCalc Pakistan",
+      "url": "https://agricalcpakistan.github.io/"
+    },
+    "isAccessibleForFree": true
+  }
+  </script>
+  <script defer src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "AgriCalc Pakistan",
+  "short_name": "AgriCalc",
+  "description": "Smart agriculture calculators and guides — offline-capable and installable.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2b7a0b",
+  "icons": [
+    {
+      "src": "assets/images/logo/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "prefer_related_applications": false
+}

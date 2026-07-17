@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Production Deployment, GitHub Pages, Cloudflare & Launch Architecture | AgriCalc Pakistan</title>
+  <meta name="description" content="A comprehensive deployment guide for AgriCalc Pakistan covering GitHub Pages, Cloudflare configuration, custom domains, performance optimization, security, SEO, analytics readiness, and pre-launch checklists." />
+  <link rel="canonical" href="https://agricalcpakistan.github.io/deployment-architecture.html" />
+  <meta property="og:title" content="Production Deployment, GitHub Pages, Cloudflare & Launch Architecture | AgriCalc Pakistan" />
+  <meta property="og:description" content="A comprehensive deployment guide for AgriCalc Pakistan covering GitHub Pages, Cloudflare configuration, custom domains, performance optimization, security, SEO, analytics readiness, and pre-launch checklists." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://agricalcpakistan.github.io/deployment-architecture.html" />
+  <meta property="og:image" content="https://agricalcpakistan.github.io/assets/images/logo/favicon.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Production Deployment, GitHub Pages, Cloudflare & Launch Architecture | AgriCalc Pakistan" />
+  <meta name="twitter:description" content="A comprehensive deployment guide for AgriCalc Pakistan covering GitHub Pages, Cloudflare configuration, custom domains, performance optimization, security, SEO, analytics readiness, and pre-launch checklists." />
+  <meta name="twitter:image" content="https://agricalcpakistan.github.io/assets/images/logo/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/navigation.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/blog.css" />
+  <link rel="stylesheet" href="assets/css/calculator.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/dark.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Production Deployment, GitHub Pages, Cloudflare & Launch Architecture",
+    "description": "A comprehensive deployment guide for AgriCalc Pakistan covering GitHub Pages, Cloudflare configuration, custom domains, performance optimization, security, SEO, analytics readiness, and pre-launch checklists.",
+    "author": {
+      "@type": "Organization",
+      "name": "AgriCalc Pakistan"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AgriCalc Pakistan"
+    },
+    "datePublished": "2026-07-12",
+    "dateModified": "2026-07-12",
+    "mainEntityOfPage": "https://agricalcpakistan.github.io/deployment-architecture.html"
+  }
+  </script>
+  <link rel="stylesheet" href="assets/css/cookie-consent.css" />
+  <meta name="google-site-verification" content="PASTE_VERIFICATION_CODE_HERE" />
+  <meta name="msvalidate.01" content="PASTE_BING_VERIFICATION_CODE_HERE" />
+
+  <!-- Google tag (gtag.js) -->
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4579856063334364"
+     crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8HSGTLY5XB"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HSGTLY5XB');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="announcement-bar">Production-ready deployment architecture for GitHub Pages and Cloudflare.</div>
+  <header class="header" role="banner">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">A</span>
+        <div class="brand__text">
+          <strong>AgriCalc Pakistan</strong>
+          <small>Smart Agriculture Platform</small>
+        </div>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav aria-label="Primary navigation">
+        <ul class="nav__list" role="menubar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="tools/crop-calculator.html">Calculators</a></li>
+          <li><a href="category/">Categories</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button data-theme-toggle class="secondary-btn" type="button">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Deployment Architecture</span>
+        </nav>
+        <div class="section__head">
+          <div>
+            <span class="tag">Deployment & Launch</span>
+            <h1>Production deployment, GitHub Pages, Cloudflare & website launch architecture</h1>
+            <p>A comprehensive guide for deploying AgriCalc Pakistan to production, configuring GitHub Pages and Cloudflare, optimizing performance, ensuring security, and maintaining long-term reliability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Project repository structure</h2>
+            <p>A clear, organized structure makes the project maintainable and scalable.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li>/assets/ — All static assets (CSS, JavaScript, images)</li>
+            <li>/assets/css/ — Stylesheets and responsive design</li>
+            <li>/assets/js/ — JavaScript modules and main application logic</li>
+            <li>/assets/images/ — Blog images, icons, logo, illustrations</li>
+            <li>/assets/fonts/ — Web fonts (if used)</li>
+            <li>/blog/ — Article pages and blog content</li>
+            <li>/calculators/ — Calculator tool pages</li>
+            <li>/glossary/ — Glossary pages</li>
+            <li>/category/ — Category hubs and navigation</li>
+            <li>/resources/ — Resource center and reference pages</li>
+            <li>/data/ — Data files and content references (future use)</li>
+            <li>/docs/ — Technical documentation and guides</li>
+            <li>Root level: index.html, 404.html, sitemap.xml, robots.txt, manifest.webmanifest, sw.js</li>
+            <li>Configuration files: README.md, LICENSE, .gitignore</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>GitHub repository configuration</h2>
+            <p>Set up the repository for collaboration, transparency, and future growth.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Essential files</h3>
+          <ul>
+            <li>README.md with project overview, setup instructions, and contribution guidelines</li>
+            <li>LICENSE file (MIT or compatible open-source license)</li>
+            <li>.gitignore to exclude build artifacts and sensitive files</li>
+            <li>Release notes template for tracking updates</li>
+            <li>Issue templates for bug reports and feature requests (future-ready)</li>
+            <li>Contributing guidelines for community involvement (future-ready)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>GitHub Pages deployment</h2>
+            <p>Ensure a reliable, secure deployment pipeline.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li>Deploy from the main or gh-pages branch as appropriate</li>
+            <li>Enable HTTPS by default through GitHub Pages</li>
+            <li>Configure correct base paths for relative asset links</li>
+            <li>Create a custom 404.html page for missing pages</li>
+            <li>Test all asset links and paths before pushing</li>
+            <li>Use GitHub Actions for automated checks (future enhancement)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Custom domain and Cloudflare configuration</h2>
+            <p>Set up a professional domain with enterprise-grade infrastructure.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Custom domain setup</h3>
+          <ul>
+            <li>Create CNAME file in the repository root pointing to the custom domain</li>
+            <li>Configure DNS records in Cloudflare to point to GitHub Pages</li>
+            <li>Set up canonical URLs in all HTML pages</li>
+            <li>Define WWW/non-WWW redirect strategy (recommend non-WWW)</li>
+            <li>Enable HTTPS-only access through Cloudflare and GitHub</li>
+          </ul>
+          <h3>Cloudflare configuration</h3>
+          <ul>
+            <li>DNS records: Set A records or CNAME records pointing to GitHub Pages</li>
+            <li>Automatic HTTPS: Enable to ensure encrypted connections</li>
+            <li>SSL/TLS: Use Flexible SSL while GitHub Pages provides HTTPS</li>
+            <li>Page Rules: Avoid rules that interfere with GitHub Pages updates</li>
+            <li>Caching: Configure browser cache and edge cache TTLs appropriately</li>
+            <li>Security: Enable DDoS protection, WAF rules, and rate limiting</li>
+            <li>Performance: Enable Brotli compression where available</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Performance optimization</h2>
+            <p>Ensure fast, responsive experiences for all users.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li>Enable Gzip and Brotli compression on Cloudflare</li>
+            <li>Optimize images: use modern formats (WebP), resize appropriately, compress</li>
+            <li>Set browser cache headers: 1 year for versioned assets, shorter for HTML</li>
+            <li>Lazy-load images and off-screen content where practical</li>
+            <li>Load fonts efficiently: limit font families, use system fonts where appropriate</li>
+            <li>Minimize render-blocking resources: defer non-critical JavaScript</li>
+            <li>Use HTTP/2 benefits through Cloudflare</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>SEO and search console</h2>
+            <p>Prepare the site for search visibility and monitoring.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li>Verify the site in Google Search Console</li>
+            <li>Submit XML sitemap through Search Console</li>
+            <li>Monitor coverage and crawl errors regularly</li>
+            <li>Track indexing status and Mobile Usability issues</li>
+            <li>Monitor Core Web Vitals and performance metrics</li>
+            <li>Review and optimize search appearance with title and meta descriptions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Analytics and privacy</h2>
+            <p>Support optional analytics while respecting privacy and compliance.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li>If analytics are enabled: load efficiently and asynchronously</li>
+            <li>Respect applicable privacy requirements (GDPR, local regulations)</li>
+            <li>Avoid unnecessary tracking or third-party data collection</li>
+            <li>Provide clear notice and consent mechanisms where required</li>
+            <li>Maintain Privacy Policy explaining data practices</li>
+            <li>If cookies are used: provide clear disclosure and consent</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>AdSense readiness</h2>
+            <p>Support advertising without compromising user experience.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li>Design layouts that accommodate ads without major restructuring</li>
+            <li>Place ads in clear, natural locations (sidebars, between sections)</li>
+            <li>Maintain strong visual separation between content and advertisements</li>
+            <li>Ensure the page remains useful and readable without ads</li>
+            <li>Avoid misleading ad placement or click-baiting layouts</li>
+            <li>Test ad layouts on mobile and desktop before enabling</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Security best practices</h2>
+            <p>Protect the site and users from common threats.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li>Use HTTPS for all connections (enabled by GitHub and Cloudflare)</li>
+            <li>Avoid storing secrets or sensitive data in the repository</li>
+            <li>Validate and sanitize any user input from forms</li>
+            <li>Use external resources carefully; verify domains and HTTPS</li>
+            <li>Minimize third-party dependencies</li>
+            <li>Keep frameworks and libraries up-to-date</li>
+            <li>Use Security Headers where available (via Cloudflare)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Backup and version management</h2>
+            <p>Maintain a reliable history and recovery strategy.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li>Maintain complete Git history as the primary backup</li>
+            <li>Tag release versions for easy rollback</li>
+            <li>Keep documentation updated in the repository</li>
+            <li>Archive periodic snapshots of the live site (optional)</li>
+            <li>Document deployment procedures and rollback steps</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Pre-launch verification checklist</h2>
+            <p>Before going live, verify all critical components.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li><strong>Design & layout:</strong> Responsive on mobile, tablet, desktop</li>
+            <li><strong>Navigation:</strong> All menus and links working</li>
+            <li><strong>Calculators:</strong> All tools functional and returning correct results</li>
+            <li><strong>Search:</strong> Search functionality operational</li>
+            <li><strong>Links:</strong> No broken internal or external links</li>
+            <li><strong>Media:</strong> All images, icons, and fonts loading correctly</li>
+            <li><strong>Metadata:</strong> Titles, descriptions, and tags complete</li>
+            <li><strong>Structured data:</strong> Validate JSON-LD schema compliance</li>
+            <li><strong>robots.txt:</strong> Allows crawlers to access important pages</li>
+            <li><strong>sitemap.xml:</strong> Complete and valid</li>
+            <li><strong>Manifest:</strong> PWA manifest.json valid and accessible</li>
+            <li><strong>Service Worker:</strong> SW registers and caches correctly</li>
+            <li><strong>Accessibility:</strong> WCAG 2.1 AA compliance reviewed</li>
+            <li><strong>Performance:</strong> Page load times acceptable</li>
+            <li><strong>Security:</strong> HTTPS working, no mixed content warnings</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Post-launch monitoring and maintenance</h2>
+            <p>Keep the site healthy and performant after launch.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Ongoing monitoring</h3>
+          <ul>
+            <li>Weekly: Check Search Console for crawl errors</li>
+            <li>Weekly: Spot-check links and calculator functionality</li>
+            <li>Monthly: Review Core Web Vitals and performance metrics</li>
+            <li>Monthly: Check for broken external references</li>
+            <li>Quarterly: Full accessibility and SEO audit</li>
+            <li>Quarterly: Review user feedback and common questions</li>
+          </ul>
+          <h3>Maintenance schedule</h3>
+          <ul>
+            <li>Update content based on seasonal changes</li>
+            <li>Refresh outdated articles and guidance</li>
+            <li>Fix broken links as they're discovered</li>
+            <li>Update social metadata and Open Graph tags</li>
+            <li>Refresh images and improve visual content</li>
+            <li>Test calculators with new scenarios</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <section>
+        <h3>AgriCalc Pakistan</h3>
+        <p>Production-ready infrastructure for reliable, scalable agriculture content delivery.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="category/">Categories</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container footer-bottom">
+      <div class="footer-logo">
+        <span>A</span>
+        <div><strong>AgriCalc Pakistan</strong></div>
+      </div>
+      <p>© 2026 AgriCalc Pakistan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/cookie-consent.js"></script>
+</body>
+</html>

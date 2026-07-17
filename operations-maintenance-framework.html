@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CI/CD, Version Control, Monitoring, QA & Long-Term Maintenance | AgriCalc Pakistan</title>
+  <meta name="description" content="A comprehensive operations framework for AgriCalc Pakistan covering CI/CD, version control strategy, release management, QA procedures, monitoring, backup and recovery, and long-term maintenance." />
+  <link rel="canonical" href="https://agricalcpakistan.github.io/operations-maintenance-framework.html" />
+  <meta property="og:title" content="CI/CD, Version Control, Monitoring, QA & Long-Term Maintenance | AgriCalc Pakistan" />
+  <meta property="og:description" content="A comprehensive operations framework for AgriCalc Pakistan covering CI/CD, version control strategy, release management, QA procedures, monitoring, backup and recovery, and long-term maintenance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://agricalcpakistan.github.io/operations-maintenance-framework.html" />
+  <meta property="og:image" content="https://agricalcpakistan.github.io/assets/images/logo/favicon.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CI/CD, Version Control, Monitoring, QA & Long-Term Maintenance | AgriCalc Pakistan" />
+  <meta name="twitter:description" content="A comprehensive operations framework for AgriCalc Pakistan covering CI/CD, version control strategy, release management, QA procedures, monitoring, backup and recovery, and long-term maintenance." />
+  <meta name="twitter:image" content="https://agricalcpakistan.github.io/assets/images/logo/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/navigation.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/blog.css" />
+  <link rel="stylesheet" href="assets/css/calculator.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/dark.css" />
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4579856063334364"
+     crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "CI/CD, Version Control, Monitoring, QA & Long-Term Maintenance",
+    "description": "A comprehensive operations framework for AgriCalc Pakistan covering CI/CD, version control strategy, release management, QA procedures, monitoring, backup and recovery, and long-term maintenance.",
+    "author": {
+      "@type": "Organization",
+      "name": "AgriCalc Pakistan"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AgriCalc Pakistan"
+    },
+    "datePublished": "2026-07-12",
+    "dateModified": "2026-07-12",
+    "mainEntityOfPage": "https://agricalcpakistan.github.io/operations-maintenance-framework.html"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="announcement-bar">Production operations framework supporting reliable releases, quality assurance, monitoring, and sustainable maintenance.</div>
+  <header class="header" role="banner">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">A</span>
+        <div class="brand__text">
+          <strong>AgriCalc Pakistan</strong>
+          <small>Smart Agriculture Platform</small>
+        </div>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav aria-label="Primary navigation">
+        <ul class="nav__list" role="menubar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="tools/crop-calculator.html">Calculators</a></li>
+          <li><a href="category/">Categories</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button data-theme-toggle class="secondary-btn" type="button">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Operations & Maintenance</span>
+        </nav>
+        <div class="section__head">
+          <div>
+            <span class="tag">Operations & QA</span>
+            <h1>CI/CD, version control, monitoring, QA & long-term maintenance framework</h1>
+            <p>A complete operational framework for managing releases, maintaining quality, monitoring health, responding to issues, and ensuring long-term reliability of AgriCalc Pakistan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Version control strategy</h2>
+            <p>Git-based branching model for organized, reviewable changes.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Branch structure</h3>
+          <ul>
+            <li><strong>main</strong> — Production-ready code deployed to GitHub Pages</li>
+            <li><strong>development</strong> — Integration branch for features and fixes</li>
+            <li><strong>feature/*</strong> — Individual feature branches (feature/crop-guide, feature/calculator-fix)</li>
+            <li><strong>hotfix/*</strong> — Urgent production fixes (hotfix/broken-link-recovery)</li>
+            <li><strong>release/*</strong> — Release preparation branch (release/v1.2.0)</li>
+          </ul>
+          <h3>Review policy</h3>
+          <ul>
+            <li>Every change requires peer review before merging to main</li>
+            <li>Use pull requests for transparent change discussion</li>
+            <li>Document why changes are being made, not just what</li>
+            <li>Link PRs to issues for traceability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Release management</h2>
+            <p>Structured, documented releases for confidence and rollback capability.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Release process</h3>
+          <ol>
+            <li>Create release branch from development</li>
+            <li>Update version number and changelog</li>
+            <li>Run final QA tests</li>
+            <li>Merge to main with release tag</li>
+            <li>Deploy to production</li>
+            <li>Monitor for issues</li>
+          </ol>
+          <h3>Release documentation</h3>
+          <ul>
+            <li>Version number (semantic versioning: v1.2.0)</li>
+            <li>Release notes with major features and changes</li>
+            <li>Bug fixes and improvements list</li>
+            <li>Known issues (if any)</li>
+            <li>Deployment date and deployed-by information</li>
+            <li>Rollback procedure and rollback date (if needed)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Optional CI/CD pipeline</h2>
+            <p>GitHub Actions support for automated validation without being required.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Recommended automated checks</h3>
+          <ul>
+            <li>HTML validation for syntax and standards compliance</li>
+            <li>CSS validation for stylesheet correctness</li>
+            <li>JavaScript linting for code quality</li>
+            <li>Link checking for internal and external references</li>
+            <li>Accessibility testing (basic WCAG compliance)</li>
+            <li>Image optimization checks</li>
+            <li>Structured data validation</li>
+          </ul>
+          <h3>Deployment automation</h3>
+          <ul>
+            <li>Automatic deployment to GitHub Pages on successful validation</li>
+            <li>Build and push previews for pull requests (optional)</li>
+            <li>Automatic metadata generation (sitemap, RSS feeds)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Quality assurance procedures</h2>
+            <p>Comprehensive testing before every release.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Functionality testing</h3>
+          <ul>
+            <li>All calculators return correct results</li>
+            <li>Forms submit and validate properly</li>
+            <li>Navigation links work across all pages</li>
+            <li>Search functionality operates correctly</li>
+            <li>Offline mode works via Service Worker</li>
+          </ul>
+          <h3>Design & UX testing</h3>
+          <ul>
+            <li>Responsive layout on mobile, tablet, desktop</li>
+            <li>Dark mode and light mode both functional</li>
+            <li>Button and link states visible and accessible</li>
+            <li>Images load with proper aspect ratios</li>
+          </ul>
+          <h3>Technical testing</h3>
+          <ul>
+            <li>Accessibility review (WCAG 2.1 AA)</li>
+            <li>SEO metadata complete and unique</li>
+            <li>Structured data validates correctly</li>
+            <li>Internal and external links valid</li>
+            <li>Performance acceptable (page load time)</li>
+            <li>No console errors or warnings</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Error handling and user experience</h2>
+            <p>Graceful degradation keeps the site functional even when things fail.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li><strong>404 pages:</strong> Custom, helpful 404 page with navigation suggestions</li>
+            <li><strong>Offline mode:</strong> Service Worker provides cached content and offline notification</li>
+            <li><strong>Missing images:</strong> Fallback colors or placeholder text</li>
+            <li><strong>JavaScript failures:</strong> Calculators fall back to basic instructions</li>
+            <li><strong>Unavailable services:</strong> Weather, price data shows disclaimer instead of error</li>
+            <li><strong>Form errors:</strong> Clear validation messages and recovery steps</li>
+            <li><strong>Network issues:</strong> Retry mechanisms and offline-first caching</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Monitoring and alerting</h2>
+            <p>Continuous oversight to catch and respond to issues quickly.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Regular monitoring tasks</h3>
+          <ul>
+            <li><strong>Daily:</strong> Check for critical errors or downtime</li>
+            <li><strong>Weekly:</strong> Search Console crawl errors, broken links</li>
+            <li><strong>Weekly:</strong> Calculator functionality spot-checks</li>
+            <li><strong>Monthly:</strong> Core Web Vitals review</li>
+            <li><strong>Monthly:</strong> External reference validation</li>
+            <li><strong>Monthly:</strong> User feedback and support tickets review</li>
+            <li><strong>Quarterly:</strong> Full accessibility and SEO audit</li>
+          </ul>
+          <h3>Metrics to track</h3>
+          <ul>
+            <li>Page availability and response time</li>
+            <li>Broken internal and external links</li>
+            <li>Core Web Vitals (LCP, FID, CLS)</li>
+            <li>Search indexing status</li>
+            <li>Mobile usability issues</li>
+            <li>Accessibility violations</li>
+            <li>Performance trends</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Issue management and tracking</h2>
+            <p>Systematic approach to tracking, prioritizing, and resolving issues.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Issue classification</h3>
+          <ul>
+            <li><strong>Priority:</strong> Critical, High, Medium, Low</li>
+            <li><strong>Severity:</strong> Blocker, Major, Minor, Trivial</li>
+            <li><strong>Category:</strong> Bug, Feature, Enhancement, Documentation</li>
+            <li><strong>Status:</strong> Reported, Triaged, In Progress, Testing, Resolved</li>
+          </ul>
+          <h3>Issue documentation</h3>
+          <ul>
+            <li>Clear title and description</li>
+            <li>Steps to reproduce (for bugs)</li>
+            <li>Expected vs actual behavior</li>
+            <li>Assigned reviewer</li>
+            <li>Target resolution date</li>
+            <li>Links to related issues</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Backup and disaster recovery</h2>
+            <p>Protect against data loss and enable quick recovery.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Backup assets</h3>
+          <ul>
+            <li>Complete Git history (primary backup)</li>
+            <li>Tagged release versions for easy rollback</li>
+            <li>Repository mirrors or forks (optional)</li>
+            <li>Documentation snapshots</li>
+            <li>Configuration backups (domain, DNS, SSL)</li>
+          </ul>
+          <h3>Recovery procedures</h3>
+          <ul>
+            <li>Accidental file deletion: restore from Git history</li>
+            <li>Deployment error: rollback to previous release tag</li>
+            <li>Repository corruption: restore from backup mirror</li>
+            <li>Domain/DNS issues: documented recovery steps with Cloudflare</li>
+            <li>Documentation loss: restore from archived copies</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Documentation framework</h2>
+            <p>Comprehensive, maintainable documentation keeps the project understandable.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li><strong>README.md:</strong> Project overview, setup, and contribution guidelines</li>
+            <li><strong>DEPLOYMENT.md:</strong> Deployment process and Cloudflare configuration</li>
+            <li><strong>SEO.md:</strong> SEO strategy, metadata patterns, structured data</li>
+            <li><strong>ARCHITECTURE.md:</strong> Project structure, coding standards, module overview</li>
+            <li><strong>ACCESSIBILITY.md:</strong> WCAG compliance practices and testing procedures</li>
+            <li><strong>CALCULATORS.md:</strong> Calculator logic, formulas, testing procedures</li>
+            <li><strong>KNOWLEDGE_BASE.md:</strong> Content organization, editorial standards, workflow</li>
+            <li><strong>CHANGELOG.md:</strong> Release history, version tags, and notable changes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Maintenance schedule</h2>
+            <p>Regular reviews ensure the site remains healthy and current.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Weekly maintenance</h3>
+          <ul>
+            <li>Check Search Console for crawl errors</li>
+            <li>Spot-check calculator functionality</li>
+            <li>Review critical support tickets</li>
+          </ul>
+          <h3>Monthly maintenance</h3>
+          <ul>
+            <li>Broken link checks and fixes</li>
+            <li>Verify external references and citations</li>
+            <li>Review Core Web Vitals</li>
+            <li>Update any outdated information</li>
+          </ul>
+          <h3>Quarterly maintenance</h3>
+          <ul>
+            <li>Full accessibility audit</li>
+            <li>Full SEO and metadata review</li>
+            <li>Performance benchmarking</li>
+            <li>Security dependency updates</li>
+          </ul>
+          <h3>Annual maintenance</h3>
+          <ul>
+            <li>Content refresh and seasonal updates</li>
+            <li>Major version planning</li>
+            <li>Technology stack review</li>
+            <li>Documentation comprehensive review</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Change management</h2>
+            <p>Track significant changes for transparency and learning.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li><strong>Changelog:</strong> User-facing record of features and fixes</li>
+            <li><strong>Git commits:</strong> Detailed technical change history</li>
+            <li><strong>Release notes:</strong> Summary of each version's improvements</li>
+            <li><strong>Migration guides:</strong> Documentation for major changes</li>
+            <li><strong>Upgrade guidance:</strong> Steps for applying updates</li>
+            <li><strong>Breaking changes:</strong> Clear notification and alternatives</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Final production audit checklist</h2>
+            <p>Verify all critical components before launch.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <ul>
+            <li>✓ HTML validation (W3C validator)</li>
+            <li>✓ CSS validation (W3C validator)</li>
+            <li>✓ JavaScript review (no errors in console)</li>
+            <li>✓ Accessibility review (WCAG 2.1 AA)</li>
+            <li>✓ SEO review (metadata, keywords, structure)</li>
+            <li>✓ Structured data validation (JSON-LD)</li>
+            <li>✓ Performance review (page load time, Core Web Vitals)</li>
+            <li>✓ Mobile usability (responsive design, touch targets)</li>
+            <li>✓ Navigation testing (all links functional)</li>
+            <li>✓ Calculator testing (correct formulas, edge cases)</li>
+            <li>✓ Offline support (Service Worker functional)</li>
+            <li>✓ Manifest validation (PWA installable)</li>
+            <li>✓ HTTPS verification (no mixed content)</li>
+            <li>✓ Broken link check (all references valid)</li>
+            <li>✓ Image verification (all assets loading)</li>
+            <li>✓ Search Console setup (sitemap submitted)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Long-term roadmap</h2>
+            <p>Future-ready architecture that scales without major redesign.</p>
+          </div>
+        </div>
+        <div class="article-content">
+          <h3>Near-term (0-6 months)</h3>
+          <ul>
+            <li>Expand content across major crop silos</li>
+            <li>Add more calculators</li>
+            <li>Expand glossary and FAQ</li>
+            <li>Monitor and optimize performance</li>
+          </ul>
+          <h3>Medium-term (6-18 months)</h3>
+          <ul>
+            <li>Weather API integration (optional)</li>
+            <li>Market price integration (optional)</li>
+            <li>Additional regional content</li>
+            <li>Enhanced analytics and insights</li>
+          </ul>
+          <h3>Long-term (18+ months)</h3>
+          <ul>
+            <li>Multilingual support (Urdu, Punjabi, Saraiki)</li>
+            <li>User accounts and preferences</li>
+            <li>Cloud synchronization</li>
+            <li>Mobile applications</li>
+            <li>Advanced search and discovery</li>
+          </ul>
+          <h3>Architecture principles</h3>
+          <ul>
+            <li>Static-first approach maintains simplicity</li>
+            <li>Modular data models support expansion</li>
+            <li>No permanent external dependencies</li>
+            <li>Progressive enhancement for new features</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <section>
+        <h3>AgriCalc Pakistan</h3>
+        <p>Production operations framework for reliable, maintainable agriculture knowledge delivery.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="category/">Categories</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container footer-bottom">
+      <div class="footer-logo">
+        <span>A</span>
+        <div><strong>AgriCalc Pakistan</strong></div>
+      </div>
+      <p>© 2026 AgriCalc Pakistan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.badge,
+.badge--primary,
+.badge--secondary,
+.badge--success,
+.badge--warning,
+.badge--danger,
+.badge--category,
+.badge--featured,
+.badge--new,
+.badge--popular {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: var(--radius-pill);
+  padding: 0.4rem 0.8rem;
+  font: var(--font-caption);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge--primary { background: rgba(33,107,47,0.12); color: var(--color-primary); }
+.badge--secondary { background: rgba(47,139,58,0.12); color: var(--color-secondary); }
+.badge--success { background: rgba(46,139,87,0.12); color: var(--color-success); }
+.badge--warning { background: rgba(212,155,31,0.16); color: var(--color-warning); }
+.badge--danger { background: rgba(214,69,69,0.14); color: var(--color-danger); }
+.badge--category { background: var(--color-primary-soft); color: var(--color-primary); }
+.badge--featured { background: rgba(195,155,46,0.16); color: var(--color-accent); }
+.badge--new { background: rgba(63,127,191,0.14); color: var(--color-info); }
+.badge--popular { background: rgba(33,107,47,0.16); color: var(--color-primary); }

@@ -1,0 +1,45 @@
+@media print {
+  .header,
+  .menu-toggle,
+  .nav-actions,
+  .hero__cta,
+  .newsletter,
+  .footer,
+  .btn,
+  .secondary-btn,
+  .primary-btn,
+  .search-bar,
+  .toc,
+  .ad-slot,
+  .sidebar,
+  .announcement-bar,
+  .back-to-top,
+  .site-overlay {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  main {
+    display: block;
+  }
+
+  article,
+  .result-box,
+  .article-content,
+  table {
+    break-inside: avoid;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  h1, h2, h3, h4 {
+    color: black;
+  }
+}

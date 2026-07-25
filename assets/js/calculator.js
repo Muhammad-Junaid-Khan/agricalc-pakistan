@@ -44,11 +44,11 @@
     },
 
     bindForm(form) {
-      const result = form.querySelector('[data-calculator-result]');
+      const result = form.querySelector('[data-calculator-result]') || form.parentElement?.querySelector('[data-calculator-result]');
       const validationMessage = form.querySelector('[data-validation-message]');
-      const historyPanel = form.querySelector('[data-history-panel]');
-      const historyList = form.querySelector('[data-history-list]');
-      const actions = form.querySelector('[data-calculator-actions]');
+      const historyPanel = result?.querySelector('[data-history-panel]') || form.querySelector('[data-history-panel]');
+      const historyList = historyPanel?.querySelector('[data-history-list]');
+      const actions = result?.querySelector('[data-calculator-actions]') || form.querySelector('[data-calculator-actions]');
       const entry = this.getEntry(form);
 
       if (!result || !entry) return;
@@ -134,7 +134,7 @@
 
       const handleAction = (action) => {
         const payload = this.getPayload(form);
-        if (!result.dataset.summary && action !== 'reset') {
+        if (!result?.dataset.summary && action !== 'reset') {
           return;
         }
 

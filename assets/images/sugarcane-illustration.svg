@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="sugarcaneTitle sugarcaneDesc">
+  <title id="sugarcaneTitle">Sugarcane illustration</title>
+  <desc id="sugarcaneDesc">A stylized illustration of sugarcane stalks and leaves.</desc>
+  <rect width="800" height="500" fill="#f5f9ed"/>
+  <path d="M180 420h440v40H180z" fill="#b0d274"/>
+  <g fill="#72a66c">
+    <path d="M220 420c0-160 40-260 60-320 18-50 44-64 70-64s52 14 70 64c20 60 60 160 60 320v40H220v-40z"/>
+    <path d="M460 420c0-160 40-260 60-320 18-50 44-64 70-64s52 14 70 64c20 60 60 160 60 320v40H460v-40z"/>
+  </g>
+  <g fill="#6a9d53">
+    <path d="M260 220c40-90 120-100 120-100s-20 50-40 80c-22 34-32 50-40 85-33-20-40-44-40-65z"/>
+    <path d="M500 220c40-90 120-100 120-100s-20 50-40 80c-22 34-32 50-40 85-33-20-40-44-40-65z"/>
+  </g>
+  <path d="M360 100c18 12 45 12 64 0" stroke="#ffffff" stroke-width="14" fill="none" opacity="0.7"/>
+  <text x="80" y="470" font-family="Arial, Helvetica, sans-serif" font-size="44" fill="#2f5f2e">Sugarcane care</text>
+</svg>

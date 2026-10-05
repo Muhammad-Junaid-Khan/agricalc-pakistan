@@ -33,7 +33,7 @@
       return;
     }
 
-    const isNestedPage = root.location.pathname.includes('/tools/');
+    const isNestedPage = /\/(tools|blog|category|resources|glossary)\//.test(root.location.pathname);
     const script = root.document.createElement('script');
     script.src = isNestedPage ? `../assets/js/${name}.js` : `assets/js/${name}.js`;
     script.async = false;
